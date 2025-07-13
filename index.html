@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chalte Raho - Tours & Travel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Chalte Raho 🚖</h1>
+    <p>Your local ride and travel partner</p>
+    <a href="partner.html" style="color:white; text-decoration:underline;">Become a Partner</a>
+
+  </header>
+
+  <section class="booking-form">
+    <h2>Book Your Ride</h2>
+    <form>
+      <input type="text" placeholder="Pickup Location" required />
+      <input type="text" placeholder="Drop Location" required />
+      <input type="datetime-local" required />
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chalte Raho. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<script>
+  document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Your ride has been booked successfully!');
+  });
